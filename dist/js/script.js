@@ -1,6 +1,7 @@
 "use strict";
 
 window.onload = function () {
+  //window.onloadはページを読み込まれた後に処理を実行する
   var $window = $(window),
       $body = $('body'),
       $nav = $('#globalNav'),
@@ -125,5 +126,21 @@ window.onload = function () {
     if (isInView) {
       $(this).addClass('is-active');
     }
-  });
+  }); //画面サイズ360px以下はそのまま縮小
+
+  (function () {
+    var viewport = document.querySelector('meta[name="viewport"]');
+
+    function switchViewport() {
+      var value = window.outerWidth > 360 // ブラウザーウィンドウ全体の幅
+      ? 'width=device-width,initial-scale=1' : 'width=360';
+
+      if (viewport.getAttribute('content') !== value) {
+        //content属性に入れ込む
+        viewport.setAttribute('content', value);
+      }
+    }
+
+    addEventListener('resize', switchViewport, false);
+  })();
 };
