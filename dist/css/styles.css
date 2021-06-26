@@ -2332,6 +2332,7 @@ main .content3 .base-wrap .content .content-box-r .image-frame::before {
   background-image: repeating-linear-gradient(135deg, transparent, transparent 16px, white 16px, white 18px);
   width: 100%;
   height: 80%;
+  will-change: clip-path;
   -webkit-clip-path: inset(0 0 0 100%);
           clip-path: inset(0 0 0 100%);
   -webkit-transition: -webkit-clip-path 1s ease;
