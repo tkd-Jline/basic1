@@ -168,6 +168,12 @@ $('.content2__slider').on('inview', function(event, isInView, visiblePartX, visi
   }
 });
 
+$('.content3 .base-wrap').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  if (isInView) {
+    $(this).addClass('is-show');
+  }
+});
+
 
 //画面サイズ360px以下はそのまま縮小
 

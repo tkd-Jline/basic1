@@ -2250,10 +2250,175 @@ main .content2 .content2__slider .slide .slide__wrap .text span {
   font-weight: bold;
 }
 
+main .content3 {
+  padding: 68px 0 108px;
+}
+
+main .content3 .base-wrap {
+  margin-top: 50px;
+  position: relative;
+}
+
+main .content3 .base-wrap .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .content3 .base-wrap .content .content-box-l {
+  position: relative;
+  width: 10%;
+}
+
+main .content3 .base-wrap .content .content-box-l h3 .sub {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: inline-block;
+  padding: 4px;
+  background-color: #fff;
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
+  -webkit-transition: -webkit-clip-path 1s ease;
+  transition: -webkit-clip-path 1s ease;
+  transition: clip-path 1s ease;
+  transition: clip-path 1s ease, -webkit-clip-path 1s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+main .content3 .base-wrap .content .content-box-l h3 .main {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
+  -webkit-transition: -webkit-clip-path 1s ease;
+  transition: -webkit-clip-path 1s ease;
+  transition: clip-path 1s ease;
+  transition: clip-path 1s ease, -webkit-clip-path 1s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+main .content3 .base-wrap .content .content-box-r {
+  width: 90%;
+}
+
+main .content3 .base-wrap .content .content-box-r .image-frame {
+  position: relative;
+  padding: 0 0 30px 50px;
+}
+
+main .content3 .base-wrap .content .content-box-r .image-frame::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto auto;
+  background-color: #eeeeee;
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 16px, white 16px, white 18px);
+  width: 100%;
+  height: 80%;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-transition: -webkit-clip-path 1s ease;
+  transition: -webkit-clip-path 1s ease;
+  transition: clip-path 1s ease;
+  transition: clip-path 1s ease, -webkit-clip-path 1s ease;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
+main .content3 .base-wrap .content .content-box-r .image-frame .image {
+  position: relative;
+  will-change: clip-path;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-transition: -webkit-clip-path 0.8s ease;
+  transition: -webkit-clip-path 0.8s ease;
+  transition: clip-path 0.8s ease;
+  transition: clip-path 0.8s ease, -webkit-clip-path 0.8s ease;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+main .content3 .base-wrap .content .content-box-r .image-frame .image img {
+  visibility: visible;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+main .content3 .base-wrap .text-box {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -16px;
+}
+
+main .content3 .base-wrap .text-box .text {
+  padding: 24px  32px;
+  background-color: #fff;
+  width: 560px;
+  margin-left: 40px;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-transition: -webkit-clip-path 0.8s ease;
+  transition: -webkit-clip-path 0.8s ease;
+  transition: clip-path 0.8s ease;
+  transition: clip-path 0.8s ease, -webkit-clip-path 0.8s ease;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}
+
+main .content3 .base-wrap .text-box .text p {
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-transition: -webkit-clip-path 0.8s ease;
+  transition: -webkit-clip-path 0.8s ease;
+  transition: clip-path 0.8s ease;
+  transition: clip-path 0.8s ease, -webkit-clip-path 0.8s ease;
+  -webkit-transition-delay: 3.5s;
+          transition-delay: 3.5s;
+}
+
+main .content3 .base-wrap.is-show .content .content-box-l .sub, main .content3 .base-wrap.is-show .content .content-box-l .main {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+
+main .content3 .base-wrap.is-show .content .content-box-r .image-frame::before {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+
+main .content3 .base-wrap.is-show .content .content-box-r .image-frame .image {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+
+main .content3 .base-wrap.is-show .text-box .text, main .content3 .base-wrap.is-show .text-box .text p {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+
 .footer {
   background-color: #b5b5b6;
   color: #fff;
   padding: 20px 0 36px;
+  position: relative;
 }
 
 .footer .inner2 {
@@ -2536,6 +2701,65 @@ main .content2 .content2__slider .slide .slide__wrap .text span {
     display: block;
     padding-top: 12px;
   }
+  main .content3 .base-wrap .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 12px;
+  }
+  main .content3 .base-wrap .content .content-box-l {
+    width: 100%;
+  }
+  main .content3 .base-wrap .content .content-box-l h3 {
+    margin-top: 16px;
+  }
+  main .content3 .base-wrap .content .content-box-l h3 .sub {
+    position: static;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  main .content3 .base-wrap .content .content-box-l h3 .main {
+    position: static;
+    display: block;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  main .content3 .base-wrap .content .content-box-r {
+    width: 100%;
+  }
+  main .content3 .base-wrap .content .content-box-r .image-frame {
+    padding: 0 0 24px 36px;
+  }
+  main .content3 .base-wrap .content .content-box-r .image-frame::before {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  main .content3 .base-wrap .content .content-box-r .image-frame .image {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  main .content3 .base-wrap .text-box {
+    position: static;
+    width: 100%;
+  }
+  main .content3 .base-wrap .text-box .text {
+    width: 100%;
+    margin: 0;
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+    padding: 12px 12px;
+  }
+  main .content3 .base-wrap .text-box .text p {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
   .footer .inner2 p {
     position: static;
   }
@@ -2593,12 +2817,21 @@ main .content2 .content2__slider .slide .slide__wrap .text span {
   main .lineup .lineup__list li:nth-of-type(7) {
     height: calc(100vw - 10px);
   }
+  main .content3 .base-wrap .content .content-box-l h3 .sub {
+    font-size: 1.1rem;
+  }
+  main .content3 .base-wrap .content .content-box-r .image-frame {
+    padding: 0 0 24px 24px;
+  }
 }
 
 @media (max-width: 992px) {
   main .lineup .lineup__list li a .text {
     position: static;
     padding: 20px;
+  }
+  main .content3 .base-wrap .text-box {
+    right: 0;
   }
 }
 

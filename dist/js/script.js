@@ -126,6 +126,11 @@ window.onload = function () {
     if (isInView) {
       $(this).addClass('is-active');
     }
+  });
+  $('.content3 .base-wrap').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+    if (isInView) {
+      $(this).addClass('is-show');
+    }
   }); //画面サイズ360px以下はそのまま縮小
 
   (function () {
